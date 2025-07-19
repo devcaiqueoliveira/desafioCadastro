@@ -1,6 +1,10 @@
 package src;
 
 public interface MessageTemplate {
+    public static void helloMenuMessage() {
+        System.out.println("-------------------------------");
+        System.out.println("---------- Bem-Vindo ---------");
+    }
     public static void mainMenuMessage() {
         System.out.println("-------------------------------");
         System.out.println("-- Escolha oque deseja fazer --");
@@ -11,5 +15,8 @@ public interface MessageTemplate {
         System.out.println("4. Listar todos os pets cadastrados");
         System.out.println("5. Listar pets por algum critério (idade, nome, raça)");
         System.out.println("6. Sair");
+    }
+    public static void registerPetMessage(Pet pet) {
+        System.out.println("Pet '" + pet.getPetName() + "' cadastrado com sucesso!");
     }
 }
