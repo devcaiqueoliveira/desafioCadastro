@@ -16,7 +16,6 @@ public final class RunForm {
     }
 
     public void executeForm() {
-        try {
             List<String> questions = readForm.readQuestions("formulario.txt");
             List<String> answers = new ArrayList<>();
 
@@ -25,11 +24,7 @@ public final class RunForm {
                 String answer = readAnswers.readAnswers(question);
                 answers.add(answer);
             }
-            responseLog.saveAnswers(answers, "respostas.txt");
-            System.out.println("Resposta salva com sucesso!");
-
-        } catch (IOException e) {
-            System.out.println("Erro: " + e.getMessage());
-        }
+            responseLog.saveAnswers(answers);
+            System.out.println("Respostas salvas com sucesso!");
     }
 }

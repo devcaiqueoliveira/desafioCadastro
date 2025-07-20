@@ -1,4 +1,4 @@
-package src;
+package src.pet.address;
 
 import lombok.AllArgsConstructor;
 

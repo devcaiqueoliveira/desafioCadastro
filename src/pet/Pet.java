@@ -1,8 +1,11 @@
-package src;
+package src.pet;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import src.pet.address.PetAddress;
+import src.pet.enums.PetGender;
+import src.pet.enums.PetType;
 
 @Getter
 @Setter

@@ -1,6 +1,6 @@
-package src.cache;
+package src.pet.cache;
 
-import src.Pet;
+import src.pet.Pet;
 
 import java.util.HashMap;
 import java.util.Map;

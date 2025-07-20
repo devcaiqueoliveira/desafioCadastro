@@ -1,19 +1,13 @@
-package src.service;
+package src.pet.service;
 
-import src.MessageTemplate;
-import src.Pet;
-import src.PetGender;
-import src.PetType;
-import src.cache.PetCache;
+import src.pet.Pet;
+import src.pet.enums.PetGender;
+import src.pet.enums.PetType;
+import src.pet.cache.PetCache;
 
 public class PetService {
     public static void registerPet(Pet pet) {
         PetCache.addPet(pet);
-        MessageTemplate.registerPetMessage(pet);
-    }
-
-    public static void sendPetGuest() {
-
     }
 
     public static String validateFullName(String petName, String petLastName) throws Exception {

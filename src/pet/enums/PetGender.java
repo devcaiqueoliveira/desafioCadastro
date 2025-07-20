@@ -1,4 +1,4 @@
-package src;
+package src.pet.enums;
 
 public enum PetGender {
     MACHO,
