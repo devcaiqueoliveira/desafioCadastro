@@ -1,4 +1,6 @@
-package src;
+package src.cache;
+
+import src.Pet;
 
 import java.util.HashMap;
 import java.util.Map;

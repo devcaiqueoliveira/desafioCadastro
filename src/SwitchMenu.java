@@ -1,10 +1,8 @@
 package src;
 
-import src.service.PetService;
-
 import java.util.Scanner;
 
-public class MenuDeEscolha {
+public class SwitchMenu {
     public static void switchOption() {
         Scanner sc = new Scanner(System.in);
         MessageTemplate.helloMenuMessage();

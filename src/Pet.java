@@ -12,7 +12,16 @@ public class Pet {
     private String petLastName;
     private PetType petType;
     private PetGender petGender;
+    private PetAddress petAddress;
     private int petAge;
     private float petWeight;
     private String petBreed;
+
+    @Override
+    public String toString() {
+        return "Pet: " + petName + " " + petLastName +
+                "\nTipo: " + ", Sexo: " + petGender + ", Raça: " + petBreed +
+                "\nIdade: " + petAge + " anos, Peso: " + petWeight + " kg" +
+                "\n" + petAddress;
+    }
 }

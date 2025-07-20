@@ -19,4 +19,5 @@ public interface MessageTemplate {
     public static void registerPetMessage(Pet pet) {
         System.out.println("Pet '" + pet.getPetName() + "' cadastrado com sucesso!");
     }
+    public static final String NOT_INFORMED = "NÃO INFORMADO";
 }
