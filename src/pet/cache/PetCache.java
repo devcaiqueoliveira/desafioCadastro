@@ -1,17 +1,21 @@
 package src.pet.cache;
 
 import src.pet.Pet;
+import src.pet.repository.PetRepository;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
-public class PetCache {
-    private static final Map<String, Pet> PET_HASH_MAP = new HashMap<>();
+public class PetCache implements PetRepository {
+    private static final List<Pet> PET_LIST = new ArrayList<>();
 
-    public static void addPet(Pet pet) {
-        PET_HASH_MAP.put(pet.getPetName(), pet);
+    @Override
+    public void save(Pet pet) {
+        PET_LIST.add(pet);
+        System.out.println("Pet salvo no Cache com sucesso!");
     }
-    public static void removePet(Pet pet) {
-        PET_HASH_MAP.remove(pet.getPetName());
+
+    public static List<Pet> getPetList() {
+        return new ArrayList<>(PET_LIST);
     }
 }

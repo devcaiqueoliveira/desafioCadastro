@@ -36,7 +36,8 @@ public class ResponseLog {
 
             List<String> formattedAnswers = new ArrayList<>();
             for (int i = 0; i < answers.size(); i++) {
-                formattedAnswers.add((i + 1) + " - " + answers.get(i));
+                String answer = answers.get(i);
+                formattedAnswers.add((i + 1) + " - " + answer);
             }
 
             Files.write(filePath, formattedAnswers);

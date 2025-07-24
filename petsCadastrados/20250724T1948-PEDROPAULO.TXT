@@ -1,0 +1,7 @@
+1 - Pedro paulo
+2 - Cachorro
+3 - Macho
+4 - Rua, 9, centro
+5 - 2
+6 - 15
+7 - Pelo
